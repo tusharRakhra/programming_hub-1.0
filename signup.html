@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sign Up</title>
+	<link rel="icon" href="logo.png">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;
+ background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(mainback.jpg);
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  }
+* {box-sizing: border-box}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background-color: black;
+    opacity: 0.5;
+    color: white ;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+    color: black;
+    opacity: 1;
+}
+
+::placeholder
+{color: white;
+position: center;}
+
+hr {
+    border: 1px solid #f1f1f1;
+    border-collapse: collapse;
+    margin-bottom: 25px;
+}
+
+/* Set a style for all buttons */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.75;
+}
+
+button:hover {
+    opacity:1;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+    padding: 14px 20px;
+    background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+}
+
+/* Add padding to container elements */
+.container {
+    padding: 16px;
+}
+
+/* Clear floats */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.searchterm{
+  float: left;
+  width: 100%;
+  border: 3px solid cyan;
+  padding: 11px;
+  font-size: 17px;
+  outline: none;
+  transition: 1s all;
+}
+.searchterm:focus{
+  color: black;
+  border: 3px solid black;
+}
+.button{
+  position: absolute;
+  top: 92%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.btn{
+  border: 1px solid transparent;
+  padding: 10px 30px;
+  color: #fff;
+  text-decoration: none;
+  transition: 0.6s ease;
+  font-size: 30px;
+}
+.btn:hover{
+  background-color: #fff;
+  color: #000;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+    .cancelbtn, .signupbtn {
+       width: 100%;
+    }
+}
+</style>
+
+</head>
+<body>
+<center>
+  <form style="border:2px solid #ccc;width: 60%;margin-top: 10px;" >
+  <div class="container">
+    <h1 style="color: white;">Sign Up</h1>
+    <p style="color: white;">Please fill in this form to create an account.</p>
+    <hr>
+
+    <p for="email" style="color: white;"><b>Email</b></p>
+    <input type="text" placeholder="Enter Email" class="searchterm" name="email" required>
+
+    <p for="psw" style="color: white;"><b>Password</b></p>
+    <input type="password" placeholder="Enter Password" class="searchterm" name="psw" required>
+
+    <p for="psw-repeat" style="color: white;"><b>Repeat Password</b></p>
+    <input type="password" placeholder="Repeat Password" class="searchterm" name="psw-repeat" required>
+    
+    <label style="color: white;">
+      <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px;"> Remember me
+    </label>
+    
+    <p style="color: white;">By creating an account you agree to our <a href="https://policies.google.com/privacy?gl=IN&hl=en-GB" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+    <div class="clearfix">
+      <button type="button" class="cancelbtn">Cancel</button>
+      <button type="submit" class="signupbtn">Sign Up</button>
+    </div>
+  </div>
+</form>
+<div class="button">
+    <a href="index.html" class="btn">Go To Home</a>
+  </div>
+</center>
+</body>
+</html>
